@@ -1,0 +1,77 @@
+/* LandingPage.module.css */
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 25%;
+  color: #ffffff;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #eb0a0a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #c6393e;
+}
+
+.footerText {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

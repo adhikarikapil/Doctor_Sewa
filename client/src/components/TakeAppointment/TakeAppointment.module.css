@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.726);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topsection {
+    height: 10%;
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbottom {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+}
+
+.topsection p {
+    font-size: 22px;
+}
+
+.topsection h1 {
+    font-size: 40px;
+    font-family: poppins;
+}
+
+.leftsection {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 139, 0.678);
+    display: flex;
+    color: white;
+}
+
+li {
+    margin: 20px;
+    margin-bottom: 25px;
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+}
+
+.mainsection h2 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+.mainsection {
+    background-color: rgb(169, 190, 242);
+    width: 80%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.appointmentinfosection{
+    height: fit-content;
+    padding: .5%;
+    width: 25%;
+    margin: 5px;
+    background-color: rgb(69, 100, 150);
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.appointmentinfosection span{
+    font-size: 25px;
+}
+
+.appointmentinfosection .cancelbutton{
+    background-color: rgb(255, 0, 0);
+    margin: 3px;
+    padding: 2px;
+}
+
+.shake {
+    animation: shake 0.3s linear;
+    box-shadow: 0 0 0 0.2rem red;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-10px);
+    }
+    40% {
+      transform: translateX(10px);
+    }
+    60% {
+      transform: translateX(-10px);
+    }
+    80% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+
+  
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navbottom {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.leftsection {
+    background-color: #4CAF50;
+
+  width: 200px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.leftsection ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.leftsection li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.leftsection li:hover {
+  background-color: #86d559;
+}
+
+.mainsection {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.menuButton {
+  display:none;
+}
+/* this is second test*/
+
+
+
+/*second test end here*/
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftsection {
+    display: none;
+  }
+  .mainsection {
+    flex: 1;
+  }
+  
+  .leftsection {
+    display: none;
+    flex-direction: column;
+    padding: 0;  
+  
+  }
+  .leftsection > li{
+    padding: 0px;
+    
+  }
+  .showMenu {
+    display: flex;
+    width: 35%;
+  }
+  .menuButton {
+    display: block;
+    position: absolute;
+    top: 11%;
+    left: 5%;
+    border: none;
+    background: none;
+  }
+  .appointmentinfosection{
+    width: 90%;
+  }
+  
+}
